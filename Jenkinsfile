@@ -15,5 +15,10 @@ pipeline {
                 sh "cat demo.txt"
             }
         }
+         stage('Read the Parameters') {
+            steps {
+                sh "cat ${params.PERSON}"
+            }
+        }
     }       
 }
