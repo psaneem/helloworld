@@ -8,7 +8,7 @@ pipeline {
     stages { 
         stage('Read the README') {
             steps {
-                cat demo.txt
+                sh "cat demo.txt"
             }
         }
     }       
