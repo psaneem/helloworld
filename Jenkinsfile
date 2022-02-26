@@ -21,5 +21,10 @@ pipeline {
                 sh "echo ${params.PERSON}"
             }
         }
+        stage('Read the Choice') {
+            steps {
+                sh "echo ${params.CHOICE}"
+            }
+        }
     }       
 }
