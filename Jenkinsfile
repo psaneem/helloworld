@@ -17,7 +17,7 @@ pipeline {
         }
          stage('Read the Parameters') {
             steps {
-                sh "cat ${params.PERSON}"
+                sh "echo ${params.PERSON}"
             }
         }
     }       
